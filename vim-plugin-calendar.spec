@@ -1,6 +1,6 @@
 Summary:	Calendar Plugin for VIM
 Name:		vim-plugin-calendar
-Version:	1.3
+Version:	1.4
 Release:	0.1
 License:	GPL
 Group:		Applications/Editors/Vim
