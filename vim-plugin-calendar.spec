@@ -1,8 +1,8 @@
-Summary:	Calendar Plugin for VIM
+Summary:	Vim plugin: calendar window
 Name:		vim-plugin-calendar
 Version:	1.4
 Release:	0.1
-License:	GPL
+License:	vim
 Group:		Applications/Editors/Vim
 Source0:	http://vim.sourceforge.net/scripts/download_script.php?src_id=3599
 # Source0-md5:	a8f706d899b35659f0e0d3459401caab
@@ -15,8 +15,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_vimdatadir	%{_datadir}/vim/vimfiles
 
 %description
-This VIM plugin lets you fill your diary in vim.
-Calendar data fiels are saved under ~/diary/YYYY/MM/DD.cal.
+This plugin provides a calendar window for vim. To start it, use the
+:Calendar command.
+
+You can also use 'diary' command wrapper, packaged with this rpm.
 
 Customizations possible in ~/.vimrc, please see
 %{_vimdatadir}/plugin/calendar.vim for details.
@@ -28,12 +30,17 @@ install %{SOURCE0} calendar.vim
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT%{_vimdatadir}/plugin
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_vimdatadir}/plugin}
 install calendar.vim $RPM_BUILD_ROOT%{_vimdatadir}/plugin
+cat <<'EOF' >> $RPM_BUILD_ROOT%{_bindir}/diary
+#!/bin/sh
+exec vim +CalendarH
+EOF
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%attr(755,root,root) %{_bindir}/diary
 %{_vimdatadir}/plugin/*
