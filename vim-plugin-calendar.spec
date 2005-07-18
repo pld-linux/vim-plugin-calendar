@@ -2,7 +2,7 @@ Summary:	Vim plugin: calendar window
 Summary(pl):	Wtyczka Vima: okno kalendarza
 Name:		vim-plugin-calendar
 Version:	1.4
-Release:	0.1
+Release:	1
 License:	vim
 Group:		Applications/Editors/Vim
 Source0:	http://vim.sourceforge.net/scripts/download_script.php?src_id=3599
