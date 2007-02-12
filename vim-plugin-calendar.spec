@@ -1,5 +1,5 @@
 Summary:	Vim plugin: calendar window
-Summary(pl.UTF-8):   Wtyczka Vima: okno kalendarza
+Summary(pl.UTF-8):	Wtyczka Vima: okno kalendarza
 Name:		vim-plugin-calendar
 Version:	1.4
 Release:	1
