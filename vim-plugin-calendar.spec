@@ -1,5 +1,5 @@
 Summary:	Vim plugin: calendar window
-Summary(pl):	Wtyczka Vima: okno kalendarza
+Summary(pl.UTF-8):   Wtyczka Vima: okno kalendarza
 Name:		vim-plugin-calendar
 Version:	1.4
 Release:	1
@@ -24,14 +24,14 @@ You can also use 'diary' command wrapper, packaged with this rpm.
 Customizations possible in ~/.vimrc, please see
 %{_vimdatadir}/plugin/calendar.vim for details.
 
-%description -l pl
-Ta wtyczka udostêpnia okno kalendarza dla vima. Aby je uruchomiæ,
-nale¿y u¿yæ polecenia :Calendar .
+%description -l pl.UTF-8
+Ta wtyczka udostÄ™pnia okno kalendarza dla vima. Aby je uruchomiÄ‡,
+naleÅ¼y uÅ¼yÄ‡ polecenia :Calendar .
 
-Mo¿na tak¿e u¿yæ polecenia pow³oki 'diary' umieszczonego w tym
+MoÅ¼na takÅ¼e uÅ¼yÄ‡ polecenia powÅ‚oki 'diary' umieszczonego w tym
 pakiecie.
 
-Wtyczka jest konfigurowalna poprzez ~/.vimrc - szczegó³y w pliku
+Wtyczka jest konfigurowalna poprzez ~/.vimrc - szczegÃ³Å‚y w pliku
 %{_vimdatadir}/plugin/calendar.vim .
 
 %prep
