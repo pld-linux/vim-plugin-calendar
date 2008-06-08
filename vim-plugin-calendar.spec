@@ -9,7 +9,7 @@ Source0:	http://vim.sourceforge.net/scripts/download_script.php?src_id=3599
 # Source0-md5:	a8f706d899b35659f0e0d3459401caab
 URL:		http://vim.sourceforge.net/scripts/script.php?script_id=52
 # for _vimdatadir existence
-Requires:	vim >= 4:6.3.058-3
+Requires:	vim-rt >= 4:6.3.058-3
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
